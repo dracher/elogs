@@ -1,0 +1,80 @@
+# This references the default nodejs container from
+# the Docker Hub: https://registry.hub.docker.com/_/node/
+# If you want Nodesource's container you would reference nodesource/node
+# Read more about containers on our dev center
+# http://devcenter.wercker.com/docs/containers/index.html
+box: node:6.10-wheezy
+# This is the build pipeline. Pipelines are the core of wercker
+# Read more about pipelines on our dev center
+# http://devcenter.wercker.com/docs/pipelines/index.html
+
+# You can also use services such as databases. Read more on our dev center:
+# http://devcenter.wercker.com/docs/services/index.html
+# services:
+    # - postgres
+    # http://devcenter.wercker.com/docs/services/postgresql.html
+
+    # - mongodb
+    # http://devcenter.wercker.com/docs/services/mongodb.html
+
+dev:
+  steps:
+    - wercker/add-to-known_hosts@2.0.1:
+        hostname: github.com
+        fingerprint: 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48
+        type: rsa
+
+    - npm-install
+
+    - script:
+        name: hexo generate then deploy to github page
+        code: |
+            git config --global user.name "dracher"
+            git config --global user.email "dracher@gmail.com"
+            $WERCKER_SOURCE_DIR/node_modules/hexo/bin/hexo generate && $WERCKER_SOURCE_DIR/node_modules/hexo/bin/hexo deploy
+
+build:
+  # The steps that will be executed on build
+  # Steps make up the actions in your pipeline
+  # Read more about steps on our dev center:
+  # http://devcenter.wercker.com/docs/steps/index.html
+  steps:
+    - wercker/add-to-known_hosts@2.0.1:
+        hostname: github.com
+        fingerprint: 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48
+        type: rsa
+    # A step that executes `npm install` command
+
+    - leipert/add-ssh-key-gh-bb@0.0.6:
+        keyname: forgithub
+    
+    - npm-install
+    # A step that executes `npm test` command
+    #- npm-test
+
+    # A custom script step, name value is used in the UI
+    # and the code value contains the command that get executed
+    - script:
+        name: clone the icarus theme
+        code: |
+            git clone https://github.com/ppoffice/hexo-theme-icarus.git themes/icarus
+
+    - script:
+        name: make icarus config
+        code: |
+            cp themes/_config.yml themes/icarus
+
+    - script:
+        name: hexo generate then deploy to github page
+        code: |
+            git config --global user.name "dracher"
+            git config --global user.email "dracher@gmail.com"
+            $WERCKER_SOURCE_DIR/node_modules/hexo/bin/hexo deploy
+
+  after-steps:
+   - wercker/email-notify@1.1.0:
+      from: dracher@gmail.com
+      to: one@sent.as
+      username: dracher
+      password: $GMAIL_PW
+      host: smtp.gmail.com:587
