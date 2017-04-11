@@ -28,10 +28,11 @@ customize:
     social_links:
         github: http://github.com/dracher
         weibo: http://weibo.com/1403004412
+        envelope: mailto:dracherATgmail.com
         # facebook: /
         # dribbble: /
         rss: /atom.xml
-    social_link_tooltip: true # enable the social link tooltip, options: true, false
+    social_link_tooltip: false # enable the social link tooltip, options: true, false
 
 # Widgets
 widgets:
@@ -50,9 +51,9 @@ search:
 
 # Comment
 comment:
-    disqus: alleleer # enter disqus shortname here
+    disqus: # enter disqus shortname here
     duoshuo: # enter duoshuo shortname here
-    youyan: # enter youyan uid here
+    youyan: 2130646 # enter youyan uid here
     facebook: # enter true to enable
     isso: # enter the domain name of your own comment isso server eg. comments.example.com
 
