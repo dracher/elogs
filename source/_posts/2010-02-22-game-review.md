@@ -2,6 +2,7 @@ title: 尘骸魔京
 date: 2010-02-22 14:12:00
 tags: game
 thumbnail: /img/acg.png
+banner: http://o86u18lvr.bkt.clouddn.com/elogs/cat/1-1112051426160-L.jpg-tiny
 categories: ACG
 ---
 
@@ -60,4 +61,3 @@ categories: ACG
 我是这世界上最古老的祈祷。
 {% endblockquote %}
 
-![game_cover](http://g.tgnet.cn/User/Data/r/rx/rx1/rx178/200707/Images/1523515823_262171.jpg)
