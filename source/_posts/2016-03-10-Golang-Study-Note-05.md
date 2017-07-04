@@ -9,7 +9,7 @@ tags: golang
 
 ### Type Assertion
 
-```golang
+```go
 
 var r io.Reader
 tty, err := os.OpenFile("/dev/tty", os.O_RDWR, 0)
