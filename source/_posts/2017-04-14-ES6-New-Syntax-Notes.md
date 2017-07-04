@@ -4,6 +4,7 @@ date: 2017-04-14 12:47:49
 tags: [javascript, es6]
 categories: Technical
 thumbnail: /img/blog.png
+banner: https://res.cloudinary.com/hkldfk58b/image/upload/v1457519425/ndjhllnnrdscukcvspya.jpg
 ---
 
 <!-- toc -->
