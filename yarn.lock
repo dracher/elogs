@@ -1019,6 +1019,10 @@ hexo-server@^0.2.0:
     opn "^4.0.0"
     serve-static "^1.10.0"
 
+hexo-tag-html5video@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/hexo-tag-html5video/-/hexo-tag-html5video-1.0.3.tgz#ad46ca9e12f8cdc2d458a8d648d0e9866a3a1f28"
+
 hexo-toc@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/hexo-toc/-/hexo-toc-1.0.8.tgz#84489277cfe6fd2d95e5aeda63cf9d2fd53b7cce"
