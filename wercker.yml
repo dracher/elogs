@@ -78,4 +78,3 @@ build:
       username: dracher
       password: $GMAIL_PW
       host: smtp.gmail.com:587
-
