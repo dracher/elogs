@@ -46,7 +46,7 @@ build:
     # A step that executes `npm install` command
 
     - leipert/add-ssh-key-gh-bb@0.0.6:
-        keyname: forgithub_PUBLIC
+        keyname: forgithub
     
     - npm-install
     # A step that executes `npm test` command
