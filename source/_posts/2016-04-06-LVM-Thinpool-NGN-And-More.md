@@ -3,6 +3,7 @@ thumbnail: /img/blog.png
 categories: Technical
 date: 2016-04-06 14:05:19
 tags: [lvm, ngn]
+banner: /img/banner.png
 ---
 
 ## Terms

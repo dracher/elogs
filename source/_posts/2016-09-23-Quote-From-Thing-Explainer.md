@@ -4,6 +4,7 @@ thumbnail: /img/blog.png
 categories: Technical
 date: 2016-09-23 17:16:41
 tags: quote
+banner: /img/banner.png
 ---
 
 > When I was in school, I learned about space boats and learned to use lots of

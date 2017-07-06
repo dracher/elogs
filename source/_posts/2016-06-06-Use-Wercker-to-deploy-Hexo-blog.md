@@ -4,6 +4,7 @@ date: 2016-06-06 15:00:53
 tags: [hexo, wercker]
 thumbnail: /img/blog.png
 categories: Technical
+banner: /img/banner.png
 ---
 
 # Get a Wercker account

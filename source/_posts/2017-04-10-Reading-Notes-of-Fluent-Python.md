@@ -4,6 +4,7 @@ date: 2017-04-10 14:29:32
 tags: [Python]
 categories: Technical
 thumbnail: /img/python.png
+banner: /img/banner.png
 ---
 
 <!-- toc -->

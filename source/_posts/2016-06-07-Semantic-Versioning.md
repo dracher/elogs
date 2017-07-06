@@ -4,6 +4,7 @@ thumbnail: /img/blog.png
 categories: Technical
 date: 2016-06-07 10:22:37
 tags: quote
+banner: /img/banner.png
 ---
 
 # [语义化版本 2.0.0](http://semver.org/lang/zh-CN/)

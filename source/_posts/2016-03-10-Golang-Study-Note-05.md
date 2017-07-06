@@ -3,6 +3,7 @@ thumbnail: /img/golang.png
 categories: Technical
 date: 2016-03-10 15:20:06
 tags: golang
+banner: /img/banner.png
 ---
 
 ## [The Go Blog](http://blog.golang.org) 学习之 [The Laws of Reflection](http://blog.golang.org/laws-of-reflection)
