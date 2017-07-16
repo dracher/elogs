@@ -9,15 +9,18 @@ categories: Technical
 
 1. either one (is one), but not both
 
-		1 ^ 1 = 0
-		1 ^ 0 = 1
-		0 ^ 0 = 0
-		0 ^ 1 = 1
-
+```go
+1 ^ 1 = 0
+1 ^ 0 = 1
+0 ^ 0 = 0
+0 ^ 1 = 1
+```
 
 ## Go Routine
 
 1. Create go routine
 
-		go function(args)
-		go func(args) { block } (args)
+```
+go function(args)
+go func(args) { block } (args)
+```
